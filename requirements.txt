@@ -1,0 +1,9 @@
+Python 3.6+
+Flask
+TensorFlow
+NLTK
+OpenCV
+PaddleOCR
+SpeechRecognition
+sounddevice
+scipy

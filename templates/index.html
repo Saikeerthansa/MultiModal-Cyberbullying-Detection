@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberbullying Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            margin: 20px auto;
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        input[type="file"], button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        h3 {
+            margin-bottom: 10px;
+        }
+        p {
+            color: #333;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e1f5fe;
+            border-radius: 5px;
+            color: #00796b;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cyberbullying Detection</h1>
+    
+    <form method="POST" enctype="multipart/form-data">
+        <h3>Upload an Image:</h3>
+        <input type="file" name="file">
+        <button type="submit">Classify Image Text</button>
+    </form>
+
+    <form method="POST">
+        <h3>Record Audio:</h3>
+        <button type="submit" name="audio" value="record">Record Audio</button>
+    </form>
+
+    {% if result %}
+        <div class="result">
+            <h2>Result: {{ result }}</h2>
+            <p>Extracted Text: {{ text }}</p>
+            <!-- <p>Cleaned Text: {{ cleaned_text }}</p> Display cleaned text here -->
+        </div>
+    {% endif %}
+</body>
+</html>
