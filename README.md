@@ -79,11 +79,13 @@ Install the required Python packages by running the following command:
 pip install -r requirements.txt
 ```
 3. Train the model (if necessary)
-If the model is not already trained, you can train it using the Jupyter notebook (cyberbullyingdetection.ipynb):
+  If the model is not already trained, you can train it using the Jupyter notebook (cyberbullyingdetection.ipynb):
 
-  Open cyberbullyingdetection.ipynb in Jupyter Notebook or Google Colab.
+    Open cyberbullyingdetection.ipynb in Jupyter Notebook or Google Colab.
+   
   Follow the steps to preprocess the data, build the CNN-GRU model, train it, and save the model as cyberbullying_cnn_gru_model.h5.
-4. Run the Flask app
+  
+5. Run the Flask app
   Start the Flask web application by running:
 ```
 python app.py
