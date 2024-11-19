@@ -85,7 +85,7 @@ pip install -r requirements.txt
    
   Follow the steps to preprocess the data, build the CNN-GRU model, train it, and save the model as cyberbullying_cnn_gru_model.h5.
   
-5. Run the Flask app
+4. Run the Flask app
   Start the Flask web application by running:
 ```
 python app.py
