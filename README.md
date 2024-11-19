@@ -80,42 +80,43 @@ pip install -r requirements.txt
 3. Train the model (if necessary)
 If the model is not already trained, you can train it using the Jupyter notebook (cyberbullyingdetection.ipynb):
 
-Open cyberbullyingdetection.ipynb in Jupyter Notebook or Google Colab.
-Follow the steps to preprocess the data, build the CNN-GRU model, train it, and save the model as cyberbullying_cnn_gru_model.h5.
+  Open cyberbullyingdetection.ipynb in Jupyter Notebook or Google Colab.
+  Follow the steps to preprocess the data, build the CNN-GRU model, train it, and save the model as cyberbullying_cnn_gru_model.h5.
 4. Run the Flask app
-Start the Flask web application by running:
-
-bash
-Copy code
+  Start the Flask web application by running:
+```
 python app.py
-This will launch the web server on http://127.0.0.1:5001.
+```
+  This will launch the web server on http://127.0.0.1:5001.
 
 5. Interact with the Web App
-Open your browser and go to http://127.0.0.1:5001. You will see a form where you can either:
 
-Upload an image file (to classify text using OCR).
-Record audio (to convert speech to text and classify).
-The web app will display the result of the classification (whether the content is cyberbullying or not) along with the extracted text.
+  Open your browser and go to http://127.0.0.1:5001. You will see a form where you can either:
+
+- Upload an image file (to classify text using OCR).
+- Record audio (to convert speech to text and classify).
+- The web app will display the result of the classification (whether the content is cyberbullying or not) along with the extracted text.
 
 How the System Works
 The system operates in three stages:
 
 Image Classification:
 
-Upload an image, which will be processed using PaddleOCR to extract text from the image.
-The extracted text is then passed to the model for classification.
+    Upload an image, which will be processed using PaddleOCR to extract text from the image.
+    The extracted text is then passed to the model for classification.
 Audio Classification:
 
-Record audio, which will be converted to text using the SpeechRecognition library.
-The text is then classified as either cyberbullying or non-cyberbullying.
+    Record audio, which will be converted to text using the SpeechRecognition library.
+    The text is then classified as either cyberbullying or non-cyberbullying.
 Text Classification:
 
-You can also manually input text for classification.
-The model will predict if the content is related to cyberbullying.
+    You can also manually input text for classification.
+    The model will predict if the content is related to cyberbullying.
+    
 Evaluation Metrics
-After training the model, the following metrics were evaluated on the test data:
+    After training the model, the following metrics were evaluated on the test data:
 
-Accuracy: 85.34%
-Precision: 84.76%
-Recall: 86.46%
-F1 Score: 85.60%
+- Accuracy: 85.34%
+- Precision: 84.76%
+- Recall: 86.46%
+- F1 Score: 85.60%
