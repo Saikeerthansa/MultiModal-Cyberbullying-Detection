@@ -53,10 +53,7 @@ pip install -r requirements.txt
 ```
 File Structure
 The structure of the project is as follows:
-
-plaintext
-Copy code
-.
+```
 ├── templates/
 │   └── index.html                # HTML template for the web app
 ├── app.py                         # Flask application file
@@ -65,20 +62,21 @@ Copy code
 ├── HateSpeechDatasetBalanced.csv   # Dataset for training and evaluation
 ├── temp_audio.wav                 # Temporary audio file for testing
 └── requirements.txt               # List of Python dependencies
+```
 How to Execute the Project
 1. Clone the repository
 Clone the repository to your local machine:
 
-bash
-Copy code
+```
 git clone <repository_url>
 cd <project_directory>
+```
 2. Install dependencies
 Install the required Python packages by running the following command:
 
-bash
-Copy code
+```
 pip install -r requirements.txt
+```
 3. Train the model (if necessary)
 If the model is not already trained, you can train it using the Jupyter notebook (cyberbullyingdetection.ipynb):
 
