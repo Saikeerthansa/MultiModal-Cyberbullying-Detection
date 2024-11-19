@@ -50,6 +50,7 @@ You can install the required libraries using `pip`:
 
 ```bash
 pip install -r requirements.txt
+```
 File Structure
 The structure of the project is as follows:
 
