@@ -6,6 +6,7 @@ This project utilizes machine learning techniques to detect cyberbullying in bot
 ## Dataset
 
 ### `HateSpeechDatasetBalanced.csv`
+Download the dataset from `https://www.kaggle.com/datasets/waalbannyantudre/hate-speech-detection-curated-dataset` and use it in the project.
 
 This dataset contains labeled textual data related to cyberbullying. It consists of two columns:
 
